@@ -50,5 +50,7 @@ You now have a working Salt repository. You can test it now::
 
 If it's not already installed, this will install ``vim`` on your system.
 
+`previous <https://github.com/ShawnMilo/saltdemo>`_
 
+`next <https://github.com/ShawnMilo/saltdemo/tree/step_03>`_
 
