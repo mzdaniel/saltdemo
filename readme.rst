@@ -72,3 +72,7 @@ the keyword ``rev`` to denote the branch.
             - rev: master
             - runas: {{ user }}
 
+`previous <https://github.com/ShawnMilo/saltdemo/tree/step_03>`_ 
+
+`next <https://github.com/ShawnMilo/saltdemo/tree/step_05>`_
+
