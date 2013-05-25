@@ -29,7 +29,7 @@ Create a group directory
 ========================
 
 Next, let's create a directory named ``foo`` to match the group name we
-specified ``top.sls``.::
+specified ``top.sls``::
 
     mkdir foo
     
