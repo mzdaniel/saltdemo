@@ -11,8 +11,8 @@ doesn't have to be.
 
 In this part of the tutorial we'll also experiment with multiple roles. Until
 now, we've been putting everything in our ``foo`` role. It's much more 
-convenient to create multiple roles and then mix-and-match those roles 
-on a machine by machine basis.
+convenient to create multiple roles and then mix & match those roles 
+on a machine-by-machine basis.
 
 Update top.sls
 --------------
@@ -63,7 +63,8 @@ Next, let's create a virtualenv and also pip install some packages:
             - runas: {{ user }}
             - requirements: salt://pydev/requirements.txt
 
-Last but not least, we'll check out a git repo to work on:
+Last but not least, we'll check out a git repo to work on. Salt uses
+the keyword ``rev`` to denote the branch.
 
 .. code:: yaml
 
