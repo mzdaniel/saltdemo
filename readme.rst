@@ -47,14 +47,11 @@ is natively supported by Salt:
 
 .. code:: yaml
 
-    #replace with your username
-    #this is jinja2 syntax
-    # http://jinja.pocoo.org/docs/
     {% set user = 'shawn' %}
 
 You should change this to your username.
 
-Next, let's create a virtualenv and also pip install some packages:
+Next, let's create a virtualenv and also pip-install some packages:
 
 .. code:: yaml
 
