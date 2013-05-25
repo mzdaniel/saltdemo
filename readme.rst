@@ -111,4 +111,13 @@ salt provides the ``watch`` directive.
             - watch:
                 - file: /etc/nginx/sites-enabled/saltdemo.conf
 
+Success!
+--------
+
+Run salt-call again::
+    
+    sudo salt-call --local state.highstate
+
+You should now see the HTML page served at
+`http://localhost:9999/ <http://localhost:9999/>`_.
 
