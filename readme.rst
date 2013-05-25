@@ -77,3 +77,5 @@ Let's Go!
 
 If you've gotten to this step, then you're ready to check out the
 next branch in this repo. Move on to step_02.
+
+`next <https://github.com/ShawnMilo/saltdemo/>`_
