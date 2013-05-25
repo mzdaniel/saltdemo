@@ -10,8 +10,6 @@ vim:
         - group: root
         - mode: 644
         - makedirs: True
-        - require: 
-            - file: /etc/nginx/sites-available/saltdemo.conf
 
 #a basic nginx config file
 /etc/nginx/sites-available/saltdemo.conf:
