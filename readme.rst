@@ -17,7 +17,7 @@ seen with git and virtualenv, for example.
 
 Notice: The documentation linked to above contains multiple sections, including
 modules, states, returners, and others. For the purposes of an ``sls`` file
-you want ***states***, **not modules**. This is important, because they are 
+you want *states*, **not modules**. This is important, because they are 
 completely different and not interchangeable. For example, the directives
 in the `git state <http://docs.saltstack.com/ref/states/all/salt.states.git.html#module-salt.states.git>`_
 are *not* the same as in the `git module <http://docs.saltstack.com/ref/modules/all/salt.modules.git.html#module-salt.modules.git>`_,
