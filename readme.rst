@@ -55,9 +55,6 @@ This is a simple yet incomplete version. Let's add some more:
             - mode: 644
             - makedirs: True
 
-We'll add one more bit to this later. For now, this is good enough.
-
-
 nginx config
 ------------
 
@@ -97,7 +94,7 @@ the symlink's source.
 keeping nginx current
 ---------------------
 
-At this point you may discover that the HTML in unavailable. This is because
+At this point you may discover that the HTML is unavailable. This is because
 nginx needs to be restarted when its configuration changes. To handle this,
 salt provides the ``watch`` directive.
 
@@ -110,6 +107,10 @@ salt provides the ``watch`` directive.
             - running
             - watch:
                 - file: /etc/nginx/sites-enabled/saltdemo.conf
+
+Now nginx will be restarted by Salt whenever that file is updated by Salt.
+Any time you update your Salt state files, you can run them on existing or
+new minions to bring them all up to the latest version.
 
 Success!
 --------
