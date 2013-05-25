@@ -29,3 +29,48 @@ Create the new directory::
     mkdir pydev
     touch pydev/init.sls
 
+pydev/init.sls
+--------------
+
+Like all good Python developers, we want to use the excellent
+`virtualenv <https://pypi.python.org/pypi/virtualenv>`_. So let's make
+sure that's installed first.
+
+.. code:: yaml
+
+    python-virtualenv:
+        pkg:
+            - installed
+
+Next, let's add a bit of `jinja2 <http://jinja.pocoo.org/docs/>`_ syntax. This
+is natively supported by Salt:
+
+.. code:: yaml
+
+    #replace with your username
+    #this is jinja2 syntax
+    # http://jinja.pocoo.org/docs/
+    {% set user = 'shawn' %}
+
+You should change this to your username.
+
+Next, let's create a virtualenv and also pip install some packages:
+
+.. code:: yaml
+
+    /tmp/pyenv:
+        virtualenv.managed:
+            - runas: {{ user }}
+            - requirements: salt://pydev/requirements.txt
+
+Last but not least, we'll check out a git repo to work on:
+
+.. code:: yaml
+
+    my_repo:
+        git.latest:
+            - name: git://github.com/ShawnMilo/milo.git
+            - target: /tmp/projects/milo
+            - rev: master
+            - runas: {{ user }}
+
