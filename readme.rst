@@ -64,6 +64,10 @@ The default location is accessible only to root. I recommend making this
 directory somewhere in your home folder, so it will be easier to work with
 this git project and, later, your own Salt files.
 
+After making this change you may have to restart the salt minion::
+
+    sudo service salt-minion restart
+
 Let's Go!
 ---------
 
