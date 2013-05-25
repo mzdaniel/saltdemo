@@ -123,6 +123,6 @@ You should now see the HTML page served at
 `http://localhost:9999/ <http://localhost:9999/>`_.
 
 
-`previous <https://github.com/ShawnMilo/saltdemo_02>`_
+`previous <https://github.com/ShawnMilo/saltdemo/tree/step_02>`_
 
 `next <https://github.com/ShawnMilo/saltdemo/tree/step_04>`_
