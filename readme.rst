@@ -13,11 +13,11 @@ Salt States
 
 Here is `a list <http://docs.saltstack.com/py-modindex.html>`_ of Salt states.
 This list includes everything Salt knows how to handle natively, as you've
-seen, with git and virtualenv, for example.
+seen with git and virtualenv, for example.
 
 Notice: The documentation linked to above contains multiple sections, including
 modules, states, returners, and others. For the purposes of an ``sls`` file
-you want **states**, not **modules**. This is important, because they are 
+you want ***states***, **not modules**. This is important, because they are 
 completely different and not interchangeable. For example, the directives
 in the `git state <http://docs.saltstack.com/ref/states/all/salt.states.git.html#module-salt.states.git>`_
 are *not* the same as in the `git module <http://docs.saltstack.com/ref/modules/all/salt.modules.git.html#module-salt.modules.git>`_,
@@ -31,7 +31,7 @@ include
 -------
 
 In addition to simply adding multiple state files to your ``top.sls`` (as we
-did with ``foo`` and ``pydev``, it's also possible to use inheritance.
+did with ``foo`` and ``pydev``), it's also possible to use inheritance.
 
 Instead of adding ``pydev`` to our ``top.sls`` file, we could have just 
 added this to ``foo/init.sls``:
@@ -96,7 +96,7 @@ Setting up a cron job is also easy:
         cron.present:
             - name: /path/to/script
             - user: shawn
-            - minute: '\*/5'
+            - minute: '*/5'
 
 All of the cron arguments (weekday, etc.) are optional, so you can leave
 them blank if they're going to be an asterisk. The ``user`` tells it whose
