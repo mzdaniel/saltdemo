@@ -15,6 +15,10 @@ Salt configurations by starting with a minimum configuration.
 You will need root access to your computer to follow along with this demo.
 Salt must be run as root, and installation requires root access.
 
+Every branch of this repo (except ``master``) contains a fully-functional
+set of Salt configuration files. You should be able to execute them without
+error to follow along. Each branch builds upon the previous branch.
+
 Installing Salt
 ===============
 
