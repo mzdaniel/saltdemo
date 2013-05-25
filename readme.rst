@@ -18,7 +18,7 @@ Salt must be run as root, and installation requires root access.
 Installing Salt
 ===============
 
-Installiing Salt is straightforward. This documentation explains installation
+Installing Salt is straightforward. This documentation explains installation
 on a Ubuntu system, and was developed on a machine running Xubuntu 13.04.
 
 See `Salt's installation documentation 
@@ -64,4 +64,8 @@ The default location is accessible only to root. I recommend making this
 directory somewhere in your home folder, so it will be easier to work with
 this git project and, later, your own Salt files.
 
+Let's Go!
+---------
 
+If you've gotten to this step, then you're ready to check out the
+next branch in this repo. Move on to step_02.
